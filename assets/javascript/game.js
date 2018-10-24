@@ -22,14 +22,14 @@ $(document).ready(function () {
             "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/b/b4/Crystal_quest.png"]
 
         randomResult = Math.floor(Math.random() * 69) + 30;
-        console.log(randomResult);
+        console.log("Current random result: " + randomResult);
 
         $("#result").html("Random Result: " + randomResult);
 
         for (var i = 0; i < 4; i++) {
 
             var randomCrystalNumber = Math.floor(Math.random() * 12) + 1;
-            console.log(randomCrystalNumber);
+            console.log("Crystal number " + [i] + ": " + randomCrystalNumber);
 
             var crystal = $("<div>");
             crystal.attr({
@@ -74,7 +74,7 @@ $(document).ready(function () {
             resetAndStart();
         }
 
-        console.log(workingResult);
+        console.log("Working result: " + workingResult);
 
     });
 
