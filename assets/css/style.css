@@ -1,11 +1,13 @@
 .crystals{
     display: flex;
     justify-content: space-around;
-    border: 1px solid orange;
     align-items: center;
 }
 .crystal{
-    border: 1px solid red;
     height: 250px;
     width: 250px;
+}
+
+.crystal:hover {
+    cursor: pointer;
 }
