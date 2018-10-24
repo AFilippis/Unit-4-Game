@@ -1,28 +1,42 @@
 var randomResult;
-var loss;
-var win;
+var loss = 0;
+var win = 0;
+var workingResult = 0;
 
 randomResult = Math.floor(Math.random() * 69) + 30;
 console.log(randomResult);
 
-$("#result").html("Random Result: ");
+$("#result").html("Random Result: " + randomResult);
 
-for(var i= 0; i < 4; i++){
+for(var i = 0; i < 4; i++){
 
-    var randomCrystalNumber = Math.florr(Math.random() * 11) + 1;
+    var randomCrystalNumber = Math.floor(Math.random() * 11) + 1;
     console.log(randomCrystalNumber);
 
     var crystal = $("<div>");
         crystal.attr({
             "class": "crystal",
-            "dataRandom": random
+            "dataRandom": randomCrystalNumber
         });
     $(".crystals").append(crystal);
-}
+};
 
 $(".crystal").on("click", function() {
 
     var num = parsInt($(this).attr("dataRandom"));
+
+    workingResult += num;
+    if(workingResult > randomResult){
+        loss++;
+        $("#loss").html(loss);
+    }
+    else if(workingResult === randomResult){
+        win++;
+        $("#win").html(win);
+    }
+    
+    console.log(workingResult);
+
 });
 
 //  4 crystals and randomResult
