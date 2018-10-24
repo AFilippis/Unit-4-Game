@@ -21,7 +21,7 @@ $(document).ready(function () {
             "https://vignette1.wikia.nocookie.net/marvel-contestofchampions/images/c/c3/Crystal_iso8.png/revision/latest?cb=20151121235324",
             "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/b/b4/Crystal_quest.png"]
 
-        randomResult = Math.floor(Math.random() * 69) + 30;
+        randomResult = Math.floor(Math.random() * 101) + 19;
         console.log("Current random result: " + randomResult);
 
         $("#result").html("Random Result: " + randomResult);
