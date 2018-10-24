@@ -18,21 +18,24 @@ for(var i = 0; i < 4; i++){
             "class": "crystal",
             "dataRandom": randomCrystalNumber
         });
+
+
     $(".crystals").append(crystal);
 };
 
 $(".crystal").on("click", function() {
 
-    var num = parsInt($(this).attr("dataRandom"));
+    var num = parseInt($(this).attr("dataRandom"));
 
     workingResult += num;
+
     if(workingResult > randomResult){
         loss++;
-        $("#loss").html(loss);
+        $("#loss").html("Losses: " + loss);
     }
     else if(workingResult === randomResult){
         win++;
-        $("#win").html(win);
+        $("#win").html("Wins: " + win);
     }
     
     console.log(workingResult);
