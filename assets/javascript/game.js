@@ -43,11 +43,11 @@ $(document).ready(function () {
             });
 
             $(".crystals").append(crystal);
-            
+
         }
 
         workingResult = 0;
-        $("#workingResult").html("Current working result: " + workingResult);
+        $("#workingResult").html("Total Score: " + workingResult);
 
     };
 

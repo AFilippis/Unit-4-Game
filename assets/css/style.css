@@ -1,8 +1,22 @@
+body {
+    background-image: url(../images/darkness/darkness.png);
+}
+h1, h5{
+    font-family: 'Uncial Antiqua', cursive;
+   
+}
+
+p{
+    font-family: 'Cardo', serif;
+    margin: 2px;
+}
+
 .crystals{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .crystal{
     height: 250px;
     width: 250px;
@@ -10,4 +24,8 @@
 
 .crystal:hover {
     cursor: pointer;
+}
+
+.card {
+    padding: 1em;
 }

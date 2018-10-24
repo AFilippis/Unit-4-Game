@@ -1,40 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Unit 4 Crystal Collector</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cardo|Uncial+Antiqua" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <div class = "card">
-    <h1>Crystal Collector</h1>
+  <title>Unit 4 Crystal Collector</title>
+</head>
+
+<body>
+  <div class="container-fluid text-center">
+    <div class="card">
+      <h1>- Crystal Collector -</h1>
     </div>
+  </div>
 
-    <br>
+  <br>
 
-    <div class = "card">
-    <p id = "result"></p>
-    <p id = "workingResult"></p>
+  <div class="container text-center">
+    <div class="card">
+      <h5>- Instructions -</h5>
+      <p>Select one of four crystals each generated with a random number to add that number to your Total Score. </p>
+      <p>Your objective is to use the crystals and their values to achieve the Random Result. </p>
+      <p>Obtain it exactly, and you win. Go over, and you lose. </p>
     </div>
+  </div>
 
-    <div class = "crystals">
+  <br>
+
+  <div class="container text-center">
+    <div class="card">
+      <h5>- Current Parameters -</h5>
+      <p id="result"></p>
+      <p id="workingResult"></p>
     </div>
+  </div>
 
-    <div class = "card">
-    <p>Current Tally</p>
-    <p>Wins: <span id = "win">0</span></p>
-    <p>Losses: <span id = "loss">0</span></p>
+  <br>
+
+  <div class="container">
+    <div class="crystals">
     </div>
+  </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="assets/javascript/game.js"></script>
-  </body>
+  <br>
+
+  <div class="container text-center">
+    <div class="card">
+      <h5>- Current Tally -</h5>
+      <p>Wins: <span id="win">0</span></p>
+      <p>Losses: <span id="loss">0</span></p>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="assets/javascript/game.js"></script>
+</body>
+
 </html>
